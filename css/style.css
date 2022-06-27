@@ -1,0 +1,344 @@
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+#particles-js {
+  background: linear-gradient(
+      to bottom,
+      rgba(14, 18, 42, 0.6) 0%,
+      rgba(14, 18, 42, 1) 100%
+    ),
+    50% 10% / cover no-repeat
+      url("../img/safar-safarov-LKsHwgzyk7c-unsplash.jpg");
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+body {
+  font-family: "Radio Canada", sans-serif;
+  font-weight: 400;
+}
+
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 300;
+}
+
+section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+
+h2 {
+  margin-top: 1rem;
+  font-size: 2rem;
+  padding: 0 2rem 1rem;
+  border-bottom: 2px solid #0f7697;
+  text-align: center;
+}
+
+.spacer {
+  content: "";
+  aspect-ratio: 901/81;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  line-height: 0;
+  display: block;
+}
+
+.wave1 {
+  background-image: url("../img/layered-waves1.svg");
+  margin-top: -1px;
+}
+
+.wave2 {
+  background-image: url("../img/layered-waves2.svg");
+  margin-bottom: -1px;
+}
+
+.light {
+  color: #defff6;
+  text-shadow: 1px 1px 2px #092c5c;
+  background: #2d8fa5;
+}
+
+.dark {
+  color: #defff6;
+  background-color: #0e122a;
+}
+
+nav {
+  background-color: #004472;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 4rem;
+  box-shadow: 0px 0px 7px rgba(14, 18, 42, 0.6);
+}
+
+nav a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #defff6;
+  width: 100%;
+  height: 100%;
+}
+
+nav .active {
+  border-bottom: 2px #defff6 solid;
+}
+
+#home {
+  padding-top: 3rem;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: linear-gradient(
+      to bottom,
+      rgba(14, 18, 42, 0.6) 0%,
+      rgba(14, 18, 42, 1) 100%
+    ),
+    50% 10% / cover no-repeat
+      url("../img/safar-safarov-LKsHwgzyk7c-unsplash.jpg");
+  color: #defff6;
+}
+
+#photo,
+#home-text {
+  z-index: 5;
+}
+
+#photo {
+  width: 300px;
+  clip-path: url(#photoClipPath);
+}
+
+#home-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+#home-text h1 {
+  margin: 0px;
+  font-weight: 700;
+}
+
+#home-text h2 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-align: center;
+  border-bottom: none;
+}
+
+#home-text a,
+#contact form button {
+  font-size: 1.25rem;
+  text-decoration: none;
+  padding: 15px 50px;
+  margin-top: 15px;
+  border: none;
+  color: #defff6;
+}
+
+#home-text a {
+  background-color: #0f7697;
+}
+
+#about-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: -15px;
+  max-width: 800px;
+  font-size: 1.15rem;
+  line-height: 2rem;
+}
+
+#about-text h2 {
+  margin: 0;
+}
+
+#about-text p {
+  margin-top: 0;
+}
+
+#about-text a {
+  color: #defff6;
+}
+
+#projects {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+#project-grid {
+  width: 100%;
+  margin: 0 auto 3rem;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.project {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border-radius: 15px;
+  padding: 1rem 2rem 2rem;
+  text-align: center;
+  text-shadow: 1px 1px 2px #0e122a;
+  background-color: #004472;
+}
+
+.project img {
+  width: 100%;
+  box-shadow: 2px 2px 2px #092c5c;
+  margin-bottom: 1rem;
+}
+
+.project .project-links {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.project a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  background: #0e122a;
+  color: #defff6;
+  width: 50%;
+  margin: 0;
+}
+
+.project p {
+  margin-bottom: 0.75rem;
+}
+
+.project p:first-of-type {
+  padding-bottom: 1.75rem;
+  border-bottom: 2px solid #0f7697;
+}
+
+#contact {
+  background: 50% 100% / contain no-repeat url("../img/polygon-scatter.svg"),
+    #2d8fa5;
+}
+
+#contact form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  width: 100%;
+  margin-bottom: 75px;
+}
+
+#contact form label {
+  font-size: 1.15rem;
+  margin-bottom: 0.5rem;
+}
+
+#contact form input {
+  height: 44px;
+}
+
+#contact form input,
+#contact form textarea {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+}
+
+#contact form button {
+  background-color: #004472;
+}
+
+footer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Media Queries */
+
+@media (hover: hover) {
+  nav a:hover {
+    background-color: #092c5c;
+  }
+}
+
+@media only screen and (min-width: 400px) {
+  section {
+    min-height: 70vh;
+    padding-left: 20vw;
+    padding-right: 20vw;
+  }
+
+  nav a {
+    font-size: 1.25rem;
+  }
+
+  #photo {
+    width: 400px;
+    margin-top: 1rem;
+  }
+
+  #about-text {
+    font-size: 1.25rem;
+  }
+
+  #projects {
+    padding-left: 10vw;
+    padding-right: 10vw;
+  }
+
+  #project-grid {
+    grid-template-columns: repeat(auto-fit, 400px);
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  nav {
+    padding: 0 25vw;
+  }
+
+  #home-text h1 {
+    font-size: 2.5rem;
+  }
+
+  #home {
+    gap: 0 3vw;
+  }
+}

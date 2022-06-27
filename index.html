@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Radio+Canada:wght@400;600;700&display=swap" rel="stylesheet"> 
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Document</title>
+
+    <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgo=">
+</head>
+<body>
+
+    
+    <header>
+        <nav>
+            <a class="active" href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div id="particles-js"></div>
+        <img id="photo" src="img/photo.png" alt="Photo of Clare Watson">
+        <svg height="0" width="0">
+            <clipPath id="photoClipPath" clipPathUnits="objectBoundingBox">
+                <path fill=""#FFFFFF" d="m 0.792 0.0737 c 0.0788 0.0473 0.1378 0.1277 0.1643 0.2143 c 0.027 0.0872 0.0208 0.1806 0.0011 0.2672 c -0.0197 0.0866 -0.0534 0.1665 -0.1041 0.2413 c -0.0501 0.0743 -0.1176 0.1434 -0.198 0.1676 c -0.081 0.0236 -0.1749 0.0023 -0.2604 -0.0309 c -0.0855 -0.0332 -0.1626 -0.0776 -0.2306 -0.1395 c -0.0681 -0.0619 -0.1277 -0.1406 -0.1412 -0.2267 C 0.0096 0.481 0.0422 0.3876 0.0922 0.3122 c 0.0501 -0.0754 0.117 -0.1333 0.1913 -0.1828 c 0.0737 -0.0501 0.1541 -0.0911 0.243 -0.1046 C 0.6159 0.0113 0.7132 0.0259 0.792 0.0737 Z"></path>
+            </clipPath>
+        </svg>
+        <div id="home-text">
+            <h1>Clare Watson</h1>
+            <h2>A Leicester based front-end developer</h2>
+            <a href="#contact">Contact Me</a>
+        </div>
+    </section>
+
+    <div class="spacer wave1"></div>
+<!-- About Section  -->
+
+    <section id="about" class="light">
+        <div id="about-text">
+            <h2>About</h2>
+            <h3>Hello, world! I’m Clare</h3>
+            <p> 
+                I’m a former insurance broker turned self-taught front-end web developer. 
+                Why the change? A passion for technology and design. Nothing beats taking an 
+                idea and building it into a reality from scratch! 
+                From a humble homepage to a sophisticated storefront, each project is a chance to 
+                create something amazing. I’m currently based in Leicester and available for 
+                work. If you’d like to discuss a project, you can contact me using <a href="#contact">the form below</a>.
+            </p>
+        </div>
+    </section>
+
+    <div class="spacer wave2"></div>
+<!-- Projects Section -->
+
+    <section id="projects" class="dark">
+        <h2>Projects</h2>
+        <div id="project-grid">
+
+
+            <div class="project">
+                <h3>This Website!</h3>
+                <img src="img/Project1Thumbnail.png">
+                <div class="project-links">
+                    <a href="#">Preview</a>
+                    <a href="#">View Code</a>
+                </div>
+                <p>A portfolio page made using vanilla Javascript and CSS and utilizing particlesJS</p>
+                <p>The journey of a thousand miles starts with a single step, or in this case a single page! This is my first attempt at a portfolio website and is relatively simple in design but gave me the chance to explore a few interesting bits of code.</p><p>The header uses intersection observer to create the same effect as bootstrap's scrollspy. The Home screen makes use of particlesJS to create the interesting particle effect in the background (try clicking it!)</p>
+            </div>
+
+
+            <div class="project">
+                <h3>Fabulous Shopping Cart</h3>
+                <img src="img/Project2Thumbnail.png">
+                <div class="project-links">
+                    <a href="https://cwatso.github.io/ShoppingCart/">Preview</a>
+                    <a href="https://github.com/cwatso/ShoppingCart">View Code</a>
+                </div>
+                <p>A simple clothing store with a shopping cart made entirely from scratch using vanilla Javascript and CSS</p>
+                <p>This project was great for learning the ins and outs of local storage in order to implement the cart. To really test my learning, I also added a product page that is generated based on the product id in the page url.</p>
+            </div>
+
+
+        </div>
+    </section>
+
+    <div class="spacer wave1"></div>
+<!-- Contact Section -->
+
+
+    <section id="contact" class="light">
+        <h2>Contact Me</h2>
+        <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Name" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Email" required>
+            <label for="message">Message</label>
+            <textarea id="message" rows="10" placeholder="Message"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer class="dark">
+        <p>&copy; 2022 Clare Watson</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
